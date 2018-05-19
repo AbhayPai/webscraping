@@ -39,7 +39,7 @@
 	<?php
 		print getBody($pageone);
 	?>
-	<h1>This is <a href="https://github.com/AbhayPai/webscraping/blob/master/tobescraped/pagetwo.html" target="_blank" title="External">Internal</a> url with php page.</h1>
+	<h1>This is <a href="https://github.com/AbhayPai/webscraping/blob/master/tobescraped/pagetwo.php" target="_blank" title="External">Internal</a> url with php page.</h1>
 	<?php
 		print getBody($pagetwo);
 	?>
