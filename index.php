@@ -7,9 +7,9 @@
 </head>
 <body>
 	<?php
-		$pageone = "http://webscraping.local/tobescrapped/pageone.html";
-		$pagetwo = "http://webscraping.local/tobescrapped/pagetwo.php";
-		$external = "https://abhaypai.github.io/webpack-skeleton";
+		$pageone = "http://webscraping.local/tobescraped/pageone.html";
+		$pagetwo = "http://webscraping.local/tobescraped/pagetwo.php";
+		$external = "https://abhaypai.github.io/boilerplate-webpack-js/";
 
 		function getBody($url) {
 			$bodyData = [];
@@ -25,7 +25,7 @@
 		    $countBodyTag = $doc->getElementsByTagName($tag)->length;
 
 		    if($countBodyTag >= 1) {
-		    	foreach ($doc->getElementsByTagName($tag) as $value) {
+		    	for ($i=0; $i < $countBodyTag; $i++) {
 		    		$bodyData = $doc->saveHtml($doc->getElementsByTagName($tag)->item(0));
 		    	}
 		    } else {
